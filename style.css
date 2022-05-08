@@ -1,0 +1,159 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+:root {
+    --heightHeader: 80px;
+    --heightFooter: 30px;
+}
+
+body {height: 100vh; font-family: 'Roboto', sans-serif;}
+
+/* ===== Configuracoes geral ===== */
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    color: #F27405;
+}
+
+/* ===== Header ===== */
+
+header {
+    width: 100vw;
+    height: var(--heightHeader);
+    background-color: #F2F2F2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerLogo img {
+    height: 65px;
+}
+
+nav ul {display: flex; gap: 1.5rem;}
+
+a {
+    color: #082040;
+    text-decoration: none;
+}
+
+/* ===== Main ===== */
+
+.globalContainer {
+    height: calc(100vh - var(--heightHeader) - var(--heightFooter));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 60vw;
+    height: 500px;
+    display: flex;
+}
+
+/* ===== Aside ===== */
+
+aside {
+    flex-basis: 320px;
+    background-color: #082040;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+aside a {
+    font-size: 0.8rem;
+    color: #F2F2F2;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border-left: 4px solid #F2F2F2;
+    transition: 300ms;
+}
+
+aside a:hover {
+    border-left: 7px solid #F27405;
+    transition: 300ms;
+}
+
+/* ===== Section do Login ===== */
+
+section {
+    flex-grow: 1;
+    background-color: #F2F2F2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+section h2 {
+    padding: 0 30px;
+    border-bottom: 3px solid #F27405;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+form input {
+    width: 220px;
+    height: 30px;
+    padding-left: 10px;
+    transition: 300ms;
+}
+
+input:focus {
+    width: 230px;
+    transition: 300ms;
+}
+
+#paragraphButton {text-align: right;}
+
+#paragraphButton button {
+    color: #F2F2F2;
+    background-color: #082040;
+    padding: 10px 20px;
+    border: none;
+}
+
+/* ===== Footer ====== */
+
+footer {
+    height: var(--heightFooter);
+    background-color: #082040;
+    font-weight: 300;
+    color: #F2F2F2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #F2F2F2;
+    font-weight: 700;
+    transition: 300ms;
+}
+
+footer a:hover {
+    letter-spacing: 1px;
+    transition: 300ms;
+}
