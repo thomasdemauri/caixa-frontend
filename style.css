@@ -132,6 +132,13 @@ input:focus {
     background-color: #082040;
     padding: 10px 20px;
     border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#paragraphButton button:hover {
+    background-color: #F27405;
+    cursor: pointer;
 }
 
 /* ===== Footer ====== */
