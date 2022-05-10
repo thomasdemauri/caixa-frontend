@@ -125,6 +125,10 @@ input:focus {
     transition: 300ms;
 }
 
+input::placeholder {
+    font-style: italic;
+}
+
 #paragraphButton {text-align: right;}
 
 #paragraphButton button {
